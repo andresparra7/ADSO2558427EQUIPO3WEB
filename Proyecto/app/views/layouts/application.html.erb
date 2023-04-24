@@ -14,7 +14,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light nav1">
         <a class="navbar-brand" href="#">Jocabed</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -22,24 +22,13 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item active naav">
+              <a class="nav-link" href="#">Inicio </a>
+              <a class="nav-link" href="#">Tienda </a>
+              <a class="nav-link" href="#">Sobre el sitio </a>
+              <a class="nav-link" href="#">Contacto </a>
             </li>
             <li class="nav-item">
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -53,13 +42,15 @@
       <section class ="row">
         <aside class="col-md-4">
           <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Deditos</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Panes</a>        
+            <a href="#" class="list-group-item list-group-item-action">Deditos</a>
+            <a href="#" class="list-group-item list-group-item-action">Pastelitos</a>        
+            <a href="#" class="list-group-item list-group-item-action">Tequeyoyo</a>
+            <a href="#" class="list-group-item list-group-item-action">Masa para Pastelitos</a>
+            <a href="#" class="list-group-item list-group-item-action">Masa para Empanadas</a>
+            <a href="#" class="list-group-item list-group-item-action">Picadas combinadas</a>
           </div>
         </aside>
         <article class ="col-md-8">
-          <p class="notice"><%= notice %></p>
-          <p class="alert"><%= alert %></p>
           <%= yield %>
         </article>
       </section>
