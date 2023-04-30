@@ -9,53 +9,88 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light nav1">
-        <a class="navbar-brand" href="#">Jocabed</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active naav">
-              <a class="nav-link" href="#">Inicio </a>
-              <a class="nav-link" href="#">Tienda </a>
-              <a class="nav-link" href="#">Sobre el sitio </a>
-              <a class="nav-link" href="#">Contacto </a>
-            </li>
-            <li class="nav-item">
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
+    <header class="header">
+      <div class="logo">
+        <img src="https://github.com/CarsOk/ADSO2558427EQUIPO3WEB/blob/web/docs/Logo1.jpg?raw=true" alt="Logo" class="logo1">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Tienda</a></li>
+          <li><a href="#">Sobre mi</a></li>
+          <li><a href="https://www.facebook.com">Contacto</a></li>
+        </ul>
+        </ul>
       </nav>
     </header>
     <main class = "container">
-      <section class ="row">
-        <aside class="col-md-4">
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">Deditos</a>
-            <a href="#" class="list-group-item list-group-item-action">Pastelitos</a>        
-            <a href="#" class="list-group-item list-group-item-action">Tequeyoyo</a>
-            <a href="#" class="list-group-item list-group-item-action">Masa para Pastelitos</a>
-            <a href="#" class="list-group-item list-group-item-action">Masa para Empanadas</a>
-            <a href="#" class="list-group-item list-group-item-action">Picadas combinadas</a>
-          </div>
-        </aside>
+      <section class ="row"> 
         <article class ="col-md-8">
           <%= yield %>
         </article>
       </section>
     </main>
-  <footer></footer>
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Dirección</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022 - US<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Domicilios</h4>
+            <p>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Horarios</h4>
+            <p>
+              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Siguenos</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
+      </div>
+    </div>
+
+  </footer>
     
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
